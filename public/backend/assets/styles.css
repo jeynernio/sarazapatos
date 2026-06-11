@@ -1,0 +1,698 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Montserrat',sans-serif;
+}
+
+body{
+  background:#000;
+  color:#fff;
+}
+
+/* HEADER */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  padding:20px 8%;
+  background:rgba(0,0,0,0.7);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+header nav a{
+  margin-left:20px;
+  cursor:pointer;
+  color:#fff;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  background:url("/backend/assets/Imagenes/Nike Free.jpg") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  padding:0 8%;
+  position:relative;
+}
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg, rgba(0,0,0,0.9), rgba(0,0,0,0.3));
+}
+
+.hero-content{
+  position:relative;
+  max-width:600px;
+}
+
+.hero h1{
+  font-size:3.5rem;
+  margin:10px 0;
+}
+
+.hero p{
+  color:#ccc;
+}
+
+/* TAG */
+.tag{
+  display:inline-block;
+  padding:6px 12px;
+  border:1px solid #ff4d4d;
+  color:#ff4d4d;
+  border-radius:20px;
+}
+
+/* BUTTON */
+.btn{
+  padding:12px 20px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(135deg,#ff4d4d,#ff9966);
+  color:white;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+.btn.outline{
+  background:transparent;
+  border:2px solid #ff9966;
+}
+
+/* SECTIONS */
+.section{
+  padding:80px 8%;
+  text-align:center;
+}
+
+.dark{
+  background:#0b0b0b;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+
+.card{
+  background:#111;
+  padding:15px;
+  border-radius:10px;
+}
+
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+/* BENEFICIOS */
+.grid-3{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+
+.box{
+  background:#111;
+  padding:20px;
+  border-radius:10px;
+}
+
+/* TESTIMONIO */
+.testimonial{
+  background:#111;
+  padding:30px;
+  border-radius:10px;
+  max-width:600px;
+  margin:auto;
+}
+
+/* CTA */
+.cta{
+  background:linear-gradient(135deg,#ff4d4d,#ff9966);
+  padding:60px 20px;
+  text-align:center;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  color:#aaa;
+}
+
+.login-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo oscuro elegante */
+.login-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(5px);
+}
+
+/* CARD */
+.login-card {
+    position: relative;
+    width: 360px;
+    margin: 6% auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+}
+
+/* animación */
+@keyframes fadeIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* cerrar */
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* HEADER */
+.login-header h2 {
+    margin-bottom: 5px;
+}
+
+.login-header p {
+    font-size: 13px;
+    color: #666;
+}
+
+/* INPUTS */
+.login-card input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.login-card input:focus {
+    border-color: #1877f2;
+}
+
+/* BOTÓN LOGIN */
+.btn-login {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #1877f2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background: #0f5bd3;
+}
+
+/* DIVIDER */
+.divider {
+    margin: 18px 0;
+    position: relative;
+    font-size: 12px;
+    color: #999;
+}
+
+.divider span {
+    background: white;
+    padding: 0 10px;
+}
+
+/* GOOGLE BUTTON */
+.btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-google i {
+    color: #db4437;
+}
+
+.btn-google:hover {
+    background: #f7f7f7;
+}
+
+/* REGISTER */
+.register {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.register a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.contact-section {
+  padding: 60px 20px;
+}
+
+.contact-wrapper {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background: #0f172a;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* IZQUIERDA */
+.contact-info h2 {
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.contact-info p {
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.tag {
+  background: #e2f3ff;
+  color: #0b5ed7;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.info-item {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+/* FORM */
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-card input,
+.contact-card textarea {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #2b3a55;
+  background: #111827;
+  color: white;
+  outline: none;
+}
+
+.contact-card textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact-card .btn {
+  background: #1d9bf0;
+  border: none;
+  padding: 12px;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.testimonial {
+  background: #111;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  transition: transform 0.3s;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial p {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 10px;
+}
+
+.testimonial span {
+  font-size: 13px;
+  color: #4ade80;
+}
+
+/* FORMULARIO */
+.review-form {
+  background: #0f172a;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.review-form h3 {
+  margin-bottom: 15px;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.review-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.social-btn i {
+    font-size: 18px;
+}
+
+/* Facebook */
+.facebook {
+    background: #1877f2;
+}
+
+.facebook:hover {
+    background: #0f5bd3;
+    transform: scale(1.05);
+}
+
+/* Instagram */
+.instagram {
+    background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+}
+
+.instagram:hover {
+    transform: scale(1.05);
+}
+
+/* WhatsApp */
+.whatsapp {
+    background: #25d366;
+}
+
+.whatsapp:hover {
+    background: #1ebe5d;
+    transform: scale(1.05);
+}
+
+
+
+/* MODAL */
+.login-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* overlay oscuro elegante */
+.login-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 20, 0.7);
+  backdrop-filter: blur(8px);
+}
+
+/* CARD */
+.login-card {
+  position: relative;
+  width: 360px;
+  padding: 32px;
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.10);
+  backdrop-filter: blur(25px);
+
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+
+  color: white;
+  text-align: center;
+
+  animation: pop 0.25s ease;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* close */
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+/* textos */
+h2 {
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+/* INPUTS */
+.input-group {
+  display: flex;
+  align-items: center;
+
+  padding: 8px 10px;   /* 👈 más compacto */
+  margin-bottom: 10px;
+
+  border-radius: 8px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+/* INPUT PEQUEÑO Y NORMAL */
+.input-group input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  width: 100%;
+
+  font-size: 13px;     /* 👈 más pequeño */
+  padding: 1px 0;
+}
+
+/* placeholder más sutil */
+.input-group input::placeholder {
+  font-size: 12px;
+  color: rgba(255,255,255,0.55);
+}
+
+/* icono más discreto */
+.icon {
+  margin-right: 6px;
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+/* BOTÓN LOGIN */
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, #7c3aed, #06b6d4);
+  color: white;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-login:hover {
+  transform: translateY(-2px);
+}
+
+/* DIVIDER */
+.divider {
+  margin: 15px 0;
+  font-size: 12px;
+  opacity: 0.6;
+  position: relative;
+}
+
+.divider span {
+  background: transparent;
+}
+
+/* GOOGLE BUTTON */
+.btn-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 12px;
+  border-radius: 12px;
+
+  background: white;
+  color: black;
+  text-decoration: none;
+
+  font-weight: 500;
+}
+
+.btn-google img {
+  width: 18px;
+}
+
+/* REGISTER */
+.register {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.register a {
+  color: #06b6d4;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+
+
+.login-card {
+  overflow: hidden;   /* corta el slide que sale */
+  position: relative; /* ancla el botón ✕ */
+  padding: 0;         /* el padding va DENTRO de cada slide, no en la card */
+}
+
+/* el track ocupa el doble de ancho y se mueve con transform */
+#authSlides {
+  display: flex;
+  width: 200%;
+  transition: transform .4s cubic-bezier(.4, 0, .2, 1);
+}
+
+/* cada slide ocupa la mitad del track = 100% de la card visible */
+#authSlides > div {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 36px 32px;
+  flex-shrink: 0;
+}
+
+/* el track ocupa el doble de ancho y se mueve con transform */
+#authSlides {
+  display: flex;
+  width: 200%;
+  transition: transform .4s cubic-bezier(.4, 0, .2, 1);
+}
+
+/* cada slide ocupa la mitad del track = 100% de la card visible */
+#authSlides > div {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 36px 32px;
+  flex-shrink: 0;
+}

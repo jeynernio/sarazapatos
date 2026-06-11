@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SaraZapatos | Sneakers Premium</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="{{ asset('backend/assets/styles.css')}}">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <h2>SaraZapatos</h2>
+  <nav>
+    <a onclick="scrollToSection('hero')">Inicio</a>
+    <a onclick="scrollToSection('beneficios')">Beneficios</a>
+    <a onclick="scrollToSection('productos')">Productos</a>
+    <a onclick="scrollToSection('resenas')">Reseñas</a>
+    <a onclick="scrollToSection('contacto')">Contacto</a>
+    <a href="/login">Login</a>
+    <a href="/registro">Registrase</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+
+    <span class="tag">🔥 Envíos en todo Nicaragua</span>
+
+    <h1>Camina con estilo. Destaca en cada paso.</h1>
+
+    <p>
+      Sneakers modernos, cómodos y originales para quienes quieren verse bien todos los días.
+    </p>
+
+    <div class="hero-buttons">
+      <button class="btn" onclick="scrollToSection('productos')">Ver colección</button>
+      <button class="btn outline" onclick="openWhatsApp()">Comprar por WhatsApp</button>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- BENEFICIOS -->
+<section id="beneficios" class="section">
+
+  <h2>¿Por qué elegirnos?</h2>
+  <p class="subtitle">Descubre por qué somos la mejor opción para tu estilo y comodidad</p>
+
+  <div class="grid-3">
+
+    <div class="box">
+      <div class="icon">👟</div>
+      <h3>Calidad Premium</h3>
+      <p>
+        Utilizamos materiales de alta resistencia y acabados de primera calidad.
+        Nuestros productos están diseñados para durar, brindándote comodidad
+        y estilo en cada paso que das.
+      </p>
+      <span class="extra">✔ Durabilidad garantizada</span>
+    </div>
+
+    <div class="box">
+      <div class="icon">🚚</div>
+      <h3>Envíos rápidos</h3>
+      <p>
+        Realizamos entregas seguras y rápidas en todo Nicaragua.
+        Recibe tu pedido en tiempo récord con seguimiento incluido
+        para tu tranquilidad.
+      </p>
+      <span class="extra">✔ Entregas confiables</span>
+    </div>
+
+    <div class="box">
+      <div class="icon">💰</div>
+      <h3>Precios accesibles</h3>
+      <p>
+        Ofrecemos productos de estilo premium a precios competitivos.
+        Creemos que la calidad no debe ser costosa, por eso ajustamos
+        nuestros precios para ti.
+      </p>
+      <span class="extra">✔ Mejor relación calidad-precio</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<!-- PRODUCTOS -->
+<section id="productos" class="section dark">
+
+  <h2>Zapatos Mas Vendidos</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="{{ asset('backend/assets/Imagenes/1.jpeg')}}">
+      <h3>Nike Air Hombre</h3>
+      <p>C$ 4000</p>
+      <button class="btn" onclick="openWhatsApp()">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="{{ asset('backend/assets/Imagenes/2.jpeg')}}">
+      <h3>Urban Max</h3>
+      <p>$68</p>
+      <button class="btn" onclick="openWhatsApp()">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="{{ asset('backend/assets/Imagenes/3.jpeg')}}">
+      <h3>Runner Pro X</h3>
+      <p>$85</p>
+      <button class="btn" onclick="openWhatsApp()">Comprar</button>
+    </div>
+
+  </div>
+  
+
+
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="{{ asset('backend/assets/Imagenes/4.jpeg')}}">
+      <h3>Addidas Zamba</h3>
+      <p>C$ 3600</p>
+      <button class="btn" onclick="openWhatsApp()">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="{{ asset('backend/assets/Imagenes/5.jpeg')}}">
+      <h3>Converse Blancos Dama</h3>
+      <p>C$ 3200</p>
+      <button class="btn" onclick="openWhatsApp()">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="{{ asset('backend/assets/Imagenes/6.jpeg')}}">
+      <h3>Runner Pro X</h3>
+      <p>$85</p>
+      <button class="btn" onclick="openWhatsApp()">Comprar</button>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<!-- TESTIMONIOS -->
+<section id="resenas" class="section">
+
+  <h2>Clientes satisfechos</h2>
+
+  <!-- RESEÑAS EXISTENTES -->
+  <div class="testimonials-grid">
+
+    <div class="testimonial">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>“Los zapatos llegaron rápido y son muy cómodos. Excelente calidad.”</p>
+      <span>- Carlos M.</span>
+    </div>
+
+    <div class="testimonial">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>“Me encantaron, se ven exactamente como en las fotos.”</p>
+      <span>- Andrea L.</span>
+    </div>
+
+    <div class="testimonial">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>“Muy buena atención y envío rápido. Volveré a comprar.”</p>
+      <span>- José R.</span>
+    </div>
+
+    <div class="testimonial">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>“Calidad premium a buen precio, muy cómodos.”</p>
+      <span>- María G.</span>
+    </div>
+
+    
+
+  </div>
+
+  
+
+</section>
+
+<form class="review-form" action="{{ route('resena.guardar') }}" method="POST">
+
+  @csrf
+
+  <h3>Deja tu reseña</h3>
+
+  <input type="text" name="nombre" placeholder="Tu nombre" required>
+
+  <select name="estrellas">
+    <option value="5">⭐⭐⭐⭐⭐ - Excelente</option>
+    <option value="4">⭐⭐⭐⭐ - Muy bueno</option>
+    <option value="3">⭐⭐⭐ - Bueno</option>
+    <option value="2">⭐⭐ - Regular</option>
+    <option value="1">⭐ - Malo</option>
+  </select>
+
+  <textarea name="comentario" placeholder="Escribe tu opinión..." required></textarea>
+
+  <button type="submit" class="btn">Publicar reseña</button>
+
+</form>
+
+
+<section id="contacto" class="contact-section">
+
+  <div class="contact-wrapper">
+
+    <!-- IZQUIERDA -->
+    <div class="contact-info">
+
+      <span class="tag">Conéctate con nosotros</span>
+
+      <h2>Estamos para ayudarte</h2>
+
+      <p>
+        Contáctanos para hacer tu pedido, resolver dudas o recibir atención rápida por WhatsApp.
+      </p>
+
+      <div class="info-item">📞 +505 89455281</div>
+      <div class="info-item">✉️ ventas@sarazapatos.com</div>
+      <div class="info-item">📍 Nicaragua</div>
+      <div class="info-item">⏰ Lun - Sáb: 8:00 - 6:00</div>
+
+    </div>
+
+    
+
+<form class="contact-card" action="{{ route('contacto.guardar') }}" method="POST">
+
+    @csrf
+
+    <input type="text" name="nombre" placeholder="Nombre completo" required>
+
+    <input type="email" name="correo" placeholder="Correo electrónico" required>
+
+    <input type="text" name="telefono" placeholder="Teléfono">
+
+    <textarea name="mensaje" placeholder="Mensaje o comentario..." required></textarea>
+
+    <button type="submit" class="btn">Enviar mensaje </button>
+
+</form>
+@if(session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+
+  </div>
+
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta">
+
+  <h2>¿Listo para mejorar tu estilo?</h2>
+  <p>Escríbenos ahora y recibe atención inmediata</p>
+
+  <button class="btn" onclick="openWhatsApp()">Hablar por WhatsApp</button>
+
+    <!-- REDES SOCIALES -->
+<!-- REDES SOCIALES -->
+<div class="social-buttons">
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/" target="_blank" class="social-btn facebook">
+        <i class="fab fa-facebook-f"></i> Facebook
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/" target="_blank" class="social-btn instagram">
+        <i class="fab fa-instagram"></i> Instagram
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/50589455281" target="_blank" class="social-btn whatsapp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  
+  <p>© 2026 SaraZapatos - Todos los derechos reservados</p>
+</footer>
+<div id="loginModal" class="login-modal">
+  <div class="login-overlay" onclick="closeLogin()"></div>
+
+  <div class="login-card" style="overflow:hidden;padding:0;width:400px;">
+
+    <!-- SLIDES WRAPPER -->
+    <div id="authSlides" style="display:flex;transition:transform .4s cubic-bezier(.4,0,.2,1);width:200%;">
+
+      <!-- ══ SLIDE 1: LOGIN ══ -->
+      <div style="width:50%;padding:36px 32px;box-sizing:border-box;flex-shrink:0;">
+        <span class="close-btn" onclick="closeLogin()" style="position:absolute;top:14px;right:16px;">✕</span>
+
+        <div style="display:flex;justify-content:center;gap:6px;margin-bottom:20px;">
+          <div class="auth-dot active"></div><div class="auth-dot"></div>
+        </div>
+
+        <h2>Bienvenido</h2>
+        <p class="subtitle">Inicia sesión para continuar</p>
+
+        <form method="POST" action="/login">
+          @csrf
+          <div class="input-group">
+            <span class="icon">📧</span>
+            <input type="text" name="email" placeholder="Usuario o correo">
+          </div>
+          <div class="input-group">
+            <span class="icon">🔒</span>
+            <input type="password" name="password" placeholder="Contraseña">
+          </div>
+          <button type="submit" class="btn-login">Entrar</button>
+        </form>
+
+        <div class="divider"><span>o</span></div>
+        <a href="/auth/google" class="btn-google">
+          <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg">
+          Continuar con Google
+        </a>
+        <p class="register">¿No tienes cuenta? <a href="#" onclick="goAuthSlide(1);return false;">Regístrate</a></p>
+      </div>
+
+      <!-- ══ SLIDE 2: REGISTRO ══ -->
+      <div style="width:50%;padding:36px 32px;box-sizing:border-box;flex-shrink:0;">
+        <div style="display:flex;justify-content:center;gap:6px;margin-bottom:20px;">
+          <div class="auth-dot"></div><div class="auth-dot active"></div>
+        </div>
+
+        <h2>Crear cuenta</h2>
+        <p class="subtitle">Regístrate gratis en segundos</p>
+
+        <form method="POST" action="/register">
+          @csrf
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div class="input-group">
+              <span class="icon">👤</span>
+              <input type="text" name="nombre" placeholder="Nombre" required>
+            </div>
+            <div class="input-group">
+              <span class="icon">👤</span>
+              <input type="text" name="apellido" placeholder="Apellido" required>
+            </div>
+          </div>
+          <div class="input-group">
+            <span class="icon">📧</span>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+          </div>
+          <div class="input-group">
+            <span class="icon">📱</span>
+            <input type="text" name="telefono" placeholder="Teléfono (opcional)">
+          </div>
+          <div class="input-group">
+            <span class="icon">🔒</span>
+            <input type="password" name="password" placeholder="Contraseña" required>
+          </div>
+          <div class="input-group">
+            <span class="icon">🔒</span>
+            <input type="password" name="password_confirmation" placeholder="Confirmar contraseña" required>
+          </div>
+          <button type="submit" class="btn-login">Crear cuenta</button>
+        </form>
+
+        <p class="register" style="margin-top:16px;">¿Ya tienes cuenta? <a href="#" onclick="goAuthSlide(0);return false;">Inicia sesión</a></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="{{ asset('backend/assets/app.js')}}">
+
+</script>
+
+</body>
+</html>
+
