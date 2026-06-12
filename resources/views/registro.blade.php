@@ -91,7 +91,7 @@ h1{
 <body>
 
 <div class="card">
-
+<a href="/login" style="font-size: 24px; font-weight: bold; text-decoration: none; color: #ffffff;">&times;</a>
     <h1>Crear Cuenta</h1>
 
     @if(session('success'))

@@ -59,36 +59,36 @@
   <div class="grid-3">
 
     <div class="box">
-      <div class="icon">👟</div>
+      <div class="icon"></div>
       <h3>Calidad Premium</h3>
       <p>
         Utilizamos materiales de alta resistencia y acabados de primera calidad.
         Nuestros productos están diseñados para durar, brindándote comodidad
         y estilo en cada paso que das.
       </p>
-      <span class="extra">✔ Durabilidad garantizada</span>
+      <span class="extra">Durabilidad garantizada</span>
     </div>
 
     <div class="box">
-      <div class="icon">🚚</div>
+      <div class="icon"></div>
       <h3>Envíos rápidos</h3>
       <p>
         Realizamos entregas seguras y rápidas en todo Nicaragua.
         Recibe tu pedido en tiempo récord con seguimiento incluido
         para tu tranquilidad.
       </p>
-      <span class="extra">✔ Entregas confiables</span>
+      <span class="extra">Entregas confiables</span>
     </div>
 
     <div class="box">
-      <div class="icon">💰</div>
+      <div class="icon"></div>
       <h3>Precios accesibles</h3>
       <p>
         Ofrecemos productos de estilo premium a precios competitivos.
         Creemos que la calidad no debe ser costosa, por eso ajustamos
         nuestros precios para ti.
       </p>
-      <span class="extra">✔ Mejor relación calidad-precio</span>
+      <span class="extra">Mejor relación calidad-precio</span>
     </div>
 
   </div>
@@ -158,49 +158,10 @@
 
 </section>
 
-
-
-
 <!-- TESTIMONIOS -->
 <section id="resenas" class="section">
 
-  <h2>Clientes satisfechos</h2>
-
-  <!-- RESEÑAS EXISTENTES -->
-  <div class="testimonials-grid">
-
-    <div class="testimonial">
-      <div class="stars">⭐⭐⭐⭐⭐</div>
-      <p>“Los zapatos llegaron rápido y son muy cómodos. Excelente calidad.”</p>
-      <span>- Carlos M.</span>
-    </div>
-
-    <div class="testimonial">
-      <div class="stars">⭐⭐⭐⭐⭐</div>
-      <p>“Me encantaron, se ven exactamente como en las fotos.”</p>
-      <span>- Andrea L.</span>
-    </div>
-
-    <div class="testimonial">
-      <div class="stars">⭐⭐⭐⭐⭐</div>
-      <p>“Muy buena atención y envío rápido. Volveré a comprar.”</p>
-      <span>- José R.</span>
-    </div>
-
-    <div class="testimonial">
-      <div class="stars">⭐⭐⭐⭐⭐</div>
-      <p>“Calidad premium a buen precio, muy cómodos.”</p>
-      <span>- María G.</span>
-    </div>
-
-    
-
-  </div>
-
-  
-
 </section>
-
 <form class="review-form" action="{{ route('resena.guardar') }}" method="POST">
 
   @csrf
@@ -286,12 +247,12 @@
 <div class="social-buttons">
 
     <!-- Facebook -->
-    <a href="https://www.facebook.com/" target="_blank" class="social-btn facebook">
+    <a href="https://www.facebook.com/profile.php?id=61589495230729" target="_blank" class="social-btn facebook">
         <i class="fab fa-facebook-f"></i> Facebook
     </a>
 
     <!-- Instagram -->
-    <a href="https://www.instagram.com/" target="_blank" class="social-btn instagram">
+    <a href="https://www.instagram.com/sarazapatos_oficial?utm_source=qr&igsh=MXE0MHBwYTE1a25lag==" target="_blank" class="social-btn instagram">
         <i class="fab fa-instagram"></i> Instagram
     </a>
 
@@ -309,92 +270,7 @@
   
   <p>© 2026 SaraZapatos - Todos los derechos reservados</p>
 </footer>
-<div id="loginModal" class="login-modal">
-  <div class="login-overlay" onclick="closeLogin()"></div>
 
-  <div class="login-card" style="overflow:hidden;padding:0;width:400px;">
-
-    <!-- SLIDES WRAPPER -->
-    <div id="authSlides" style="display:flex;transition:transform .4s cubic-bezier(.4,0,.2,1);width:200%;">
-
-      <!-- ══ SLIDE 1: LOGIN ══ -->
-      <div style="width:50%;padding:36px 32px;box-sizing:border-box;flex-shrink:0;">
-        <span class="close-btn" onclick="closeLogin()" style="position:absolute;top:14px;right:16px;">✕</span>
-
-        <div style="display:flex;justify-content:center;gap:6px;margin-bottom:20px;">
-          <div class="auth-dot active"></div><div class="auth-dot"></div>
-        </div>
-
-        <h2>Bienvenido</h2>
-        <p class="subtitle">Inicia sesión para continuar</p>
-
-        <form method="POST" action="/login">
-          @csrf
-          <div class="input-group">
-            <span class="icon">📧</span>
-            <input type="text" name="email" placeholder="Usuario o correo">
-          </div>
-          <div class="input-group">
-            <span class="icon">🔒</span>
-            <input type="password" name="password" placeholder="Contraseña">
-          </div>
-          <button type="submit" class="btn-login">Entrar</button>
-        </form>
-
-        <div class="divider"><span>o</span></div>
-        <a href="/auth/google" class="btn-google">
-          <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg">
-          Continuar con Google
-        </a>
-        <p class="register">¿No tienes cuenta? <a href="#" onclick="goAuthSlide(1);return false;">Regístrate</a></p>
-      </div>
-
-      <!-- ══ SLIDE 2: REGISTRO ══ -->
-      <div style="width:50%;padding:36px 32px;box-sizing:border-box;flex-shrink:0;">
-        <div style="display:flex;justify-content:center;gap:6px;margin-bottom:20px;">
-          <div class="auth-dot"></div><div class="auth-dot active"></div>
-        </div>
-
-        <h2>Crear cuenta</h2>
-        <p class="subtitle">Regístrate gratis en segundos</p>
-
-        <form method="POST" action="/register">
-          @csrf
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-            <div class="input-group">
-              <span class="icon">👤</span>
-              <input type="text" name="nombre" placeholder="Nombre" required>
-            </div>
-            <div class="input-group">
-              <span class="icon">👤</span>
-              <input type="text" name="apellido" placeholder="Apellido" required>
-            </div>
-          </div>
-          <div class="input-group">
-            <span class="icon">📧</span>
-            <input type="email" name="email" placeholder="Correo electrónico" required>
-          </div>
-          <div class="input-group">
-            <span class="icon">📱</span>
-            <input type="text" name="telefono" placeholder="Teléfono (opcional)">
-          </div>
-          <div class="input-group">
-            <span class="icon">🔒</span>
-            <input type="password" name="password" placeholder="Contraseña" required>
-          </div>
-          <div class="input-group">
-            <span class="icon">🔒</span>
-            <input type="password" name="password_confirmation" placeholder="Confirmar contraseña" required>
-          </div>
-          <button type="submit" class="btn-login">Crear cuenta</button>
-        </form>
-
-        <p class="register" style="margin-top:16px;">¿Ya tienes cuenta? <a href="#" onclick="goAuthSlide(0);return false;">Inicia sesión</a></p>
-      </div>
-
-    </div>
-  </div>
-</div>
 
 <script src="{{ asset('backend/assets/app.js')}}">
 

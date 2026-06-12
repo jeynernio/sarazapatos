@@ -691,18 +691,18 @@
     <script>
         // --- BASE DE DATOS DE 12 PRODUCTOS ---
         const productos = [
-            { id: 1, name: "Nike Air Max Scarlet", price: 120.00, cat: "Running", desc: "Zapatillas de alto rendimiento con amortiguación Air Max Maxima. Ideales para corredores urbanos que buscan confort y estilo agresivo.", img: "backend/assets/Imagenes/1.jpeg" },
-            { id: 2, name: "Nike Zoom Neon V2", price: 95.00, cat: "Training", desc: "Diseño ultraligero con suela reactiva de espuma Zoom. Rompe tus marcas en el gimnasio con la máxima ventilación.", img: "backend/assets/Imagenes/12.jpeg" },
-            { id: 3, name: "Air Force Pastel Edition", price: 110.00, cat: "Urbano", desc: "Un giro moderno al clásico de clásicos. Tonos pastel premium que combinan a la perfección con cualquier outfit casual diario.", img: "backend/assets/Imagenes/2.jpeg" },
+            { id: 1, name: "Fila", price: 40, cat: "Running", desc: "Zapatillas de alto rendimiento con amortiguación Air Max Maxima. Ideales para corredores urbanos que buscan confort y estilo.", img: "backend/assets/Imagenes/1.jpeg" },
+            { id: 2, name: "Nike Zoom Neon V2", price: 60, cat: "Training", desc: "Diseño ultraligero con suela reactiva de espuma Zoom. Rompe tus marcas en el gimnasio con la máxima ventilación.", img: "backend/assets/Imagenes/12.jpeg" },
+            { id: 3, name: "Nike Air Rum", price: 50, cat: "Urbano", desc: "Un giro moderno al clásico de clásicos. Tonos pastel premium que combinan a la perfección con cualquier outfit casual diario.", img: "backend/assets/Imagenes/2.jpeg" },
             { id: 4, name: "Vans Old Skool Classic", price: 65.00, cat: "Skate / Retro", desc: "La legendaria zapatilla de skate con la icónica banda lateral. Construcción duradera de lona y gamuza con suela de wofle.", img: "backend/assets/Imagenes/3.jpeg" },
-            { id: 5, name: "Adidas Forum Triple White", price: 130.00, cat: "Urbano", desc: "Inspiradas en el baloncesto de los 80s. Materiales de cuero premium con correa ajustable en el tobillo para un ajuste icónico.", img: "backend/assets/Imagenes/4.jpeg" },
-            { id: 6, name: "Classic Timber All-Road", price: 180.00, cat: "Botas", desc: "Botas resistentes al agua fabricadas con cuero nobuk de primera calidad. Perfectas para la aventura o el estilo urbano rudo.", img: "backend/assets/Imagenes/5.jpeg" },
-            { id: 7, name: "Puma Cali Dreamer", price: 85.00, cat: "Casual", desc: "Estilo californiano con una suela de plataforma gruesa. Comodidad absoluta para caminar todo el día llamando la atención.", img: "backend/assets/Imagenes/6.jpeg" },
+            { id: 5, name: "DC", price: 130.00, cat: "Urbano", desc: "Inspiradas en el baloncesto de los 80s. Materiales de cuero premium con correa ajustable en el tobillo para un ajuste icónico.", img: "backend/assets/Imagenes/4.jpeg" },
+            { id: 6, name: "Nike Air", price: 180.00, cat: "Botas", desc: "Botas resistentes al agua fabricadas con cuero nobuk de primera calidad. Perfectas para la aventura o el estilo urbano rudo.", img: "backend/assets/Imagenes/5.jpeg" },
+            { id: 7, name: "Jordan", price: 85.00, cat: "Casual", desc: "Estilo californiano con una suela de plataforma gruesa. Comodidad absoluta para caminar todo el día llamando la atención.", img: "backend/assets/Imagenes/6.jpeg" },
             { id: 8, name: "New Balance 990 Slate", price: 145.00, cat: "Retro Running", desc: "La mezcla perfecta de amortiguación y estabilidad superior. Hechas para los amantes del diseño retro-running de alta gama.", img: "backend/assets/Imagenes/7.jpeg" },
-            { id: 9, name: "Jordan Retro High Mocha", price: 210.00, cat: "Colección", desc: "Un esquema de color icónico y codiciado a nivel mundial. Cuero pulido de la más alta calidad y silueta legendaria.", img: "backend/assets/Imagenes/8.jpeg" },
+            { id: 9, name: "Air Balnco", price: 210.00, cat: "Colección", desc: "Un esquema de color icónico y codiciado a nivel mundial. Cuero pulido de la más alta calidad y silueta legendaria.", img: "backend/assets/Imagenes/8.jpeg" },
             { id: 10, name: "Reebok Club C Vintage", price: 75.00, cat: "Retro", desc: "Diseño minimalista sacado de las canchas de tenis tradicionales. Piel suave y confort clásico que nunca pasa de moda.", img: "backend/assets/Imagenes/9.jpeg" },
-            { id: 11, name: "Converse Chuck Taylor All Star", price: 60.00, cat: "Urbano", desc: "Las lonas más famosas del planeta. Silueta inconfundible, parches icónicos en el tobillo y versatilidad cultural eterna.", img: "backend/assets/Imagenes/10.jpeg" },
-            { id: 12, name: "Asics Gel-Kayano Alpha", price: 160.00, cat: "Performance", desc: "Tecnología GEL de vanguardia para una absorción de impactos inigualable. Diseñadas científicamente para largas distancias.", img: "backend/assets/Imagenes/11.jpeg" }
+            { id: 11, name: "Puma", price: 60.00, cat: "Urbano", desc: "Las lonas más famosas del planeta. Silueta inconfundible, parches icónicos en el tobillo y versatilidad cultural eterna.", img: "backend/assets/Imagenes/10.jpeg" },
+            { id: 12, name: "Jordan Air", price: 160.00, cat: "Performance", desc: "Tecnología GEL de vanguardia para una absorción de impactos inigualable. Diseñadas científicamente para largas distancias.", img: "backend/assets/Imagenes/11.jpeg" }
         ];
 
         // --- RENDERIZAR CUADRÍCULA DE PRODUCTOS ---

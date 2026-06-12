@@ -94,6 +94,10 @@ Route::get('/logout', function () {
 
 
 
+//ruta para ir al inicio
 
+Route::get('/welcome', function () {
+    return view('welcome');
+});
 
 

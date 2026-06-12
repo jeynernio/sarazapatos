@@ -121,8 +121,9 @@ h1{
 <body>
 
 <div class="card">
-
+<a href="/welcome" style="font-size: 24px; font-weight: bold; text-decoration: none; color: #ffffff;">&times;</a>
     <h1>Iniciar Sesión</h1>
+    
     <p class="subtitulo">Ingresa tus credenciales</p>
 
     @if(session('success'))
@@ -171,6 +172,7 @@ h1{
         <button type="submit" class="btn">
             Ingresar
         </button>
+        
     </form>
 
     <div class="footer">
